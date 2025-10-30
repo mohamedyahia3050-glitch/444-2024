@@ -3,24 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>بحث بالرقم القومي - تكليف 270/2025</title>
+  <title>التحقق من قرارات التعديل - قرار 444 لسنة 2024 (أخصائي تمريض)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
   <div class="w-full max-w-3xl">
     <div class="bg-white rounded-2xl shadow p-6">
-      <h1 class="text-2xl font-bold mb-4 text-right">بحث بالرقم القومي - قرار 444 لسنة 2024 (أخصائي تمريض)</h1>
+      
+      <!-- 🔹 العنوان الرئيسي الجديد -->
+      <h1 class="text-3xl font-extrabold mb-2 text-center text-blue-700">
+        التحقق من صدور قرارات تعديل تكليف / إلغاء / تصويب ...
+      </h1>
+
+      <!-- 🔹 عنوان القرار -->
+      <h2 class="text-xl font-semibold mb-6 text-center text-gray-700">
+        بحث بالرقم القومي - قرار 444 لسنة 2024 (أخصائي تمريض)
+      </h2>
+
+      <!-- 🔹 مربع البحث -->
       <div class="flex gap-2 items-center mb-4">
         <input id="searchInput" type="text" placeholder="أدخل الرقم القومي" class="flex-1 p-3 rounded-lg border text-right" />
         <button id="searchBtn" class="px-4 py-2 rounded-lg bg-blue-600 text-white">بحث</button>
         <button id="resetBtn" class="px-3 py-2 rounded-lg bg-gray-200">مسح</button>
       </div>
+
+      <!-- 🔹 عرض النتائج -->
       <div id="result" class="mt-4"></div>
-      <p class="text-sm text-gray-500 mt-4">البيانات تُحمَّل من ملف <code>data.json</code></p>
+
     </div>
-    <p class="text-center text-xs text-gray-400 mt-3">صمم للعرض الداخلي - عرض النتائج بالاسم، جهة التكليف، والملاحظات. اللون الأخضر = يوجد ملاحظات، الأحمر = لا توجد ملاحظات.</p>
+
+    <!-- 🔹 التوقيع -->
+    <div class="mt-6 text-left">
+      <p class="text-sm text-gray-500 italic font-semibold" style="font-family: 'Cairo', sans-serif;">
+        © Mohamed Yahia
+      </p>
+    </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
